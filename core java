@@ -1,0 +1,27 @@
+interface Book{
+    public void bookTittle();
+    public void bookAuthor();
+    public void price();
+}
+public class BookImp1 implements Book{
+    public void bookTittle(){
+        System.out.println("CoreJava");
+    }
+    public void bookAuthor(){
+        System.out.println("You Access...");
+    }
+    public void price(){
+        System.out.println("RS.550");
+    }
+    public void myBook(){
+        System.out.println("MyNew JAVA 21");
+    }
+    public static void main(String[]args){
+        //Book b1 = new Book()
+        //But we can create
+        Book b1=new BookImp1();
+             b1.bookTittle();
+             b1.bookAuthor();
+             b1.price();
+    }
+}
